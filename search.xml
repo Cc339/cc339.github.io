@@ -195,18 +195,18 @@
   <entry>
     <title>Android静态分析</title>
     <url>/2020/03/10/Android%E9%9D%99%E6%80%81%E5%88%86%E6%9E%90/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="IDA破解实例-定位关键代码"><a href="#IDA破解实例-定位关键代码" class="headerlink" title="IDA破解实例-定位关键代码"></a>IDA破解实例-定位关键代码</h3><h5 id="搜索特征字符串"><a href="#搜索特征字符串" class="headerlink" title="搜索特征字符串"></a>搜索特征字符串</h5><figure class="highlight angelscript"><table><tr><td class="code"><pre><span class="line"><span class="number">1.</span> ctrl+s定位<span class="built_in">string</span>s段</span><br><span class="line"><span class="number">2.</span> alt+t快捷键搜索文本字符串</span><br></pre></td></tr></table></figure>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="IDA破解实例-定位关键代码"><a href="#IDA破解实例-定位关键代码" class="headerlink" title="IDA破解实例-定位关键代码"></a>IDA破解实例-定位关键代码</h3><h4 id="搜索特征字符串"><a href="#搜索特征字符串" class="headerlink" title="搜索特征字符串"></a>搜索特征字符串</h4><figure class="highlight angelscript"><table><tr><td class="code"><pre><span class="line"><span class="number">1.</span> ctrl+s定位<span class="built_in">string</span>s段</span><br><span class="line"><span class="number">2.</span> alt+t快捷键搜索文本字符串</span><br></pre></td></tr></table></figure>
 
-<h5 id="搜索API"><a href="#搜索API" class="headerlink" title="搜索API"></a>搜索API</h5><figure class="highlight angelscript"><table><tr><td class="code"><pre><span class="line"><span class="number">1.</span> 定位到code段</span><br><span class="line"><span class="number">2.</span> 搜索API名称</span><br></pre></td></tr></table></figure>
+<h4 id="搜索API"><a href="#搜索API" class="headerlink" title="搜索API"></a>搜索API</h4><figure class="highlight angelscript"><table><tr><td class="code"><pre><span class="line"><span class="number">1.</span> 定位到code段</span><br><span class="line"><span class="number">2.</span> 搜索API名称</span><br></pre></td></tr></table></figure>
 
-<h5 id="搜索方法名"><a href="#搜索方法名" class="headerlink" title="搜索方法名"></a>搜索方法名</h5><figure class="highlight delphi"><table><tr><td class="code"><pre><span class="line">在<span class="keyword">Exports</span>窗口中搜索方法名</span><br></pre></td></tr></table></figure>
+<h4 id="搜索方法名"><a href="#搜索方法名" class="headerlink" title="搜索方法名"></a>搜索方法名</h4><figure class="highlight delphi"><table><tr><td class="code"><pre><span class="line">在<span class="keyword">Exports</span>窗口中搜索方法名</span><br></pre></td></tr></table></figure>
 
 <blockquote>
 <p>if-eqz的opcode是0x38<br>if-nez的opcode是0x39<br>return的opcode是0x0f</p>
 </blockquote>
-<h5 id="修改dex，替换apk中的dex"><a href="#修改dex，替换apk中的dex" class="headerlink" title="修改dex，替换apk中的dex"></a>修改dex，替换apk中的dex</h5><figure class="highlight angelscript"><table><tr><td class="code"><pre><span class="line"><span class="number">1.</span> 使用dexFixer更新checksum</span><br><span class="line"><span class="number">2.</span> 将修改后的dex重新放回apk包里</span><br><span class="line"><span class="number">3.</span> 删除META-INF文件夹</span><br><span class="line"><span class="number">4.</span> 对apk重签名即可安装</span><br></pre></td></tr></table></figure>
+<h4 id="修改dex，替换apk中的dex"><a href="#修改dex，替换apk中的dex" class="headerlink" title="修改dex，替换apk中的dex"></a>修改dex，替换apk中的dex</h4><figure class="highlight angelscript"><table><tr><td class="code"><pre><span class="line"><span class="number">1.</span> 使用dexFixer更新checksum</span><br><span class="line"><span class="number">2.</span> 将修改后的dex重新放回apk包里</span><br><span class="line"><span class="number">3.</span> 删除META-INF文件夹</span><br><span class="line"><span class="number">4.</span> 对apk重签名即可安装</span><br></pre></td></tr></table></figure>
 
-<h5 id="终止程序"><a href="#终止程序" class="headerlink" title="终止程序"></a>终止程序</h5><ul>
+<h4 id="终止程序"><a href="#终止程序" class="headerlink" title="终止程序"></a>终止程序</h4><ul>
 <li><p>Context的finish()方法</p>
 </li>
 <li><p>android.os.Process的killProcess()方法</p>

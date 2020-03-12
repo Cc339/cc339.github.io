@@ -1774,9 +1774,6 @@ pre .javascript .function {
   max-width: 96px;
   height: auto;
 }
-.site-author-image {
-  border-radius: 100%;
-}
 .site-author-name {
   margin: 5px 0 0;
   text-align: center;
@@ -1810,7 +1807,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #af8c30;
+  background: #ffff05;
 }
 .feed-link,
 .chat {
