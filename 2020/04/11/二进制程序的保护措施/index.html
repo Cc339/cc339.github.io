@@ -146,17 +146,18 @@
 
 
 
-  <meta name="description" content="Linux命令记录1234567891011121314151617181920212223242526272829echo xxxxx &amp;gt; xx.txt 会自动换行echo -n xxxxx &amp;gt; xx.txt 不会换行sudo passwd root //更改root密码//链接$ sudo rm -rf python$ sudo ln -s /usr/bin/python3  /u">
+  <meta name="description" content="参考大佬博客：http://blog.eonew.cn/archives/222 ASLRASLR（地址随机化）是一种针对缓冲区溢出的安全保护技术，通过对堆、栈、共享库映射等线性区布局的随机化，通过增加攻击者预测目的地址的难度，防止攻击者直接定位攻击代码位置，达到阻止溢出攻击的目的。但是，地址随机化不是对所有模块和内存区都进行随机化！虽然libc、栈、堆的加载位置被随机化，但主镜像不会。 Linu">
+<meta name="keywords" content="Pwn">
 <meta property="og:type" content="article">
-<meta property="og:title" content="常用命令记录">
-<meta property="og:url" content="https://www.j1nxu3.com/2020/03/16/常用命令记录/index.html">
+<meta property="og:title" content="二进制程序的保护措施">
+<meta property="og:url" content="https://www.j1nxu3.com/2020/04/11/二进制程序的保护措施/index.html">
 <meta property="og:site_name" content="J1nXu3的辣鸡场">
-<meta property="og:description" content="Linux命令记录1234567891011121314151617181920212223242526272829echo xxxxx &amp;gt; xx.txt 会自动换行echo -n xxxxx &amp;gt; xx.txt 不会换行sudo passwd root //更改root密码//链接$ sudo rm -rf python$ sudo ln -s /usr/bin/python3  /u">
+<meta property="og:description" content="参考大佬博客：http://blog.eonew.cn/archives/222 ASLRASLR（地址随机化）是一种针对缓冲区溢出的安全保护技术，通过对堆、栈、共享库映射等线性区布局的随机化，通过增加攻击者预测目的地址的难度，防止攻击者直接定位攻击代码位置，达到阻止溢出攻击的目的。但是，地址随机化不是对所有模块和内存区都进行随机化！虽然libc、栈、堆的加载位置被随机化，但主镜像不会。 Linu">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2020-04-11T12:52:40.609Z">
+<meta property="og:updated_time" content="2020-04-11T14:04:38.041Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="常用命令记录">
-<meta name="twitter:description" content="Linux命令记录1234567891011121314151617181920212223242526272829echo xxxxx &amp;gt; xx.txt 会自动换行echo -n xxxxx &amp;gt; xx.txt 不会换行sudo passwd root //更改root密码//链接$ sudo rm -rf python$ sudo ln -s /usr/bin/python3  /u">
+<meta name="twitter:title" content="二进制程序的保护措施">
+<meta name="twitter:description" content="参考大佬博客：http://blog.eonew.cn/archives/222 ASLRASLR（地址随机化）是一种针对缓冲区溢出的安全保护技术，通过对堆、栈、共享库映射等线性区布局的随机化，通过增加攻击者预测目的地址的难度，防止攻击者直接定位攻击代码位置，达到阻止溢出攻击的目的。但是，地址随机化不是对所有模块和内存区都进行随机化！虽然libc、栈、堆的加载位置被随机化，但主镜像不会。 Linu">
 
 
 
@@ -164,7 +165,7 @@
 
   
   
-  <link rel="canonical" href="https://www.j1nxu3.com/2020/03/16/常用命令记录/">
+  <link rel="canonical" href="https://www.j1nxu3.com/2020/04/11/二进制程序的保护措施/">
 
 
 
@@ -174,7 +175,7 @@
   };
 </script>
 
-  <title>常用命令记录 | J1nXu3的辣鸡场</title>
+  <title>二进制程序的保护措施 | J1nXu3的辣鸡场</title>
   
 
 
@@ -419,7 +420,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://www.j1nxu3.com/2020/03/16/常用命令记录/">
+    <link itemprop="mainEntityOfPage" href="https://www.j1nxu3.com/2020/04/11/二进制程序的保护措施/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="丨J1nX丨">
@@ -436,7 +437,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">常用命令记录
+          <h1 class="post-title" itemprop="name headline">二进制程序的保护措施
 
               
             
@@ -446,10 +447,6 @@
         <div class="post-meta">
           <span class="post-time">
           	
-    			<i class="fa fa-thumb-tack"></i>
-    			<font color="RED">置顶</font>
-    			<span class="post-meta-divider">|</span>
-			
 
 
             
@@ -468,28 +465,34 @@
                 
               
 
-              <time title="创建时间：2020-03-16 18:56:35" itemprop="dateCreated datePublished" datetime="2020-03-16T18:56:35+08:00">2020-03-16</time>
+              <time title="创建时间：2020-04-11 21:46:12 / 修改时间：22:04:38" itemprop="dateCreated datePublished" datetime="2020-04-11T21:46:12+08:00">2020-04-11</time>
             
 
             
               
 
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2020-04-11 20:52:40" itemprop="dateModified" datetime="2020-04-11T20:52:40+08:00">2020-04-11</time>
               
             
           </span>
 
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Pwn/" itemprop="url" rel="index"><span itemprop="name">Pwn</span></a></span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -520,7 +523,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">1.5k</span>
+                <span title="本文字数">1.2k</span>
               
 
               
@@ -554,12 +557,23 @@
       
 
       
-        <h1 id="Linux命令记录"><a href="#Linux命令记录" class="headerlink" title="Linux命令记录"></a>Linux命令记录</h1><figure class="highlight tcl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">echo xxxxx &gt; xx.txt 会自动换行</span><br><span class="line">echo -n xxxxx &gt; xx.txt 不会换行</span><br><span class="line"></span><br><span class="line">sudo passwd root //更改root密码</span><br><span class="line"></span><br><span class="line">//链接</span><br><span class="line">$ sudo rm -rf python</span><br><span class="line">$ sudo ln -s /usr/bin/python3  /usr/bin/python</span><br><span class="line">//换内核程序</span><br><span class="line">sudo apt-get install synaptic</span><br><span class="line">//重启桌面</span><br><span class="line">sudo /etc/init.d/gdm restart</span><br><span class="line">//关闭ASLR</span><br><span class="line">echo <span class="number">0</span> &gt; /<span class="keyword">proc</span>/sys/kernel/randomize_va_space</span><br><span class="line"></span><br><span class="line">NX：-z<span class="title"> execstack / -z</span> noexecstack (关闭 / 开启)    不让执行栈上的数据，于是JMP<span class="title"> ESP就不能用了</span></span><br><span class="line"><span class="title">Canary：-fno-stack-protector /-fstack-protector / -fstack-protector-all (关闭</span> / 开启 / 全开启)  栈里插入cookie信息</span><br><span class="line">PIE：-no-pie / -pie (关闭 / 开启)   地址随机化，另外打开后会有get_pc_thunk</span><br><span class="line">RELRO：-z<span class="title"> norelro / -z</span> lazy / -z<span class="title"> now (关闭</span> / 部分开启 / 完全开启)  对GOT表具有写权限</span><br><span class="line"></span><br><span class="line">//linux命令，将指定程序在指定端口运行：</span><br><span class="line">socat<span class="title"> tcp-listen:10001,reuseaddr,fork</span> EXEC:./file_name,pty,raw,echo=0</span><br><span class="line"></span><br><span class="line">//在x64下通常参数从左到右依次放在rdi,<span class="title"> rsi,</span> rdx,<span class="title"> rcx,</span> r8,<span class="title"> r9，多出来的参数才会入栈（根据调用约定的方式可能有不同，通常是这样）</span></span><br><span class="line"><span class="title"></span></span><br><span class="line"><span class="title">特殊的gadgets:</span></span><br><span class="line"><span class="title">通常位于x64的ELF程序中的__libc_csu_init,</span></span><br><span class="line"><span class="title">universal_gadget1</span> = 0x40075a           #万能gadget1：pop<span class="title"> rbx;</span> pop<span class="title"> rbp;</span> pop<span class="title"> r12;</span> pop<span class="title"> r13;</span> pop<span class="title"> r14;</span> pop<span class="title"> r15;</span> retn</span><br><span class="line">universal_gadget2 = 0x400740        #万能gadget2：mov<span class="title"> rdx,</span> r13;<span class="title"> mov</span> rsi,<span class="title"> r14;</span> mov<span class="title"> edi,</span> r15d;<span class="title"> call</span> qword<span class="title"> ptr</span> [r12+rbx*8]</span><br></pre></td></tr></table></figure>
-
-<h1 id="ABD命令"><a href="#ABD命令" class="headerlink" title="ABD命令"></a>ABD命令</h1><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">adb tcpip <span class="number">5555</span></span><br><span class="line">adb connect xxxxx:<span class="number">5555</span></span><br><span class="line"></span><br><span class="line">cat /proc/cpuinfo #Android查看cpu架构</span><br><span class="line"></span><br><span class="line">jdb附加 jdb -connect com<span class="selector-class">.sun</span><span class="selector-class">.jdi</span><span class="selector-class">.SocketAttach</span>:hostname=localhost,port=<span class="number">8700</span></span><br></pre></td></tr></table></figure>
-
-<h1 id="docker命令"><a href="#docker命令" class="headerlink" title="docker命令"></a>docker命令</h1><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//导入镜像：docker import - ubuntu/17.04.amd64</span></span><br><span class="line"><span class="comment">//运行镜像：docker run -it -p 23946:23946 ubuntu/17.04.amd64 /bin/bash</span></span><br><span class="line">  会创建一个docker容器，第一个端口是宿主机的端口，第二个是容器的端口</span><br><span class="line"><span class="comment">//列出容器：docker container ls -a</span></span><br><span class="line"><span class="comment">//容器重命名：docker container rename old_name new_name</span></span><br><span class="line"><span class="comment">//打开容器的shell：docker exec -it container_name /bin/bash</span></span><br><span class="line"><span class="comment">//启动容器：docker start container_name</span></span><br><span class="line"><span class="comment">//复制：docker container cp file_name container_name:/root</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//导入镜像</span></span><br><span class="line">docker load -<span class="selector-tag">i</span> nginx.tar</span><br><span class="line"><span class="comment">//导出镜像</span></span><br><span class="line">docker save -o nginx<span class="selector-class">.tar</span> nginx:latest</span><br></pre></td></tr></table></figure>
-
+        <p>参考大佬博客：<a href="http://blog.eonew.cn/archives/222" target="_blank" rel="noopener">http://blog.eonew.cn/archives/222</a></p>
+<h1 id="ASLR"><a href="#ASLR" class="headerlink" title="ASLR"></a>ASLR</h1><p>ASLR（地址随机化）是一种针对缓冲区溢出的安全保护技术，通过对堆、栈、共享库映射等线性区布局的随机化，通过增加攻击者预测目的地址的难度，防止攻击者直接定位攻击代码位置，达到阻止溢出攻击的目的。<br>但是，地址随机化不是对所有模块和内存区都进行随机化！虽然libc、栈、堆的加载位置被随机化，但主镜像不会。</p>
+<p>Linux检查是否开启ASLR，命令：</p>
+<p><code>cat /proc/sys/kernel/randomize_va_space</code></p>
+<p>如果/proc/sys/kernel/randomize_va_space里的值为0时，则表示ASLR关闭。</p>
+<p>可用下面的命令手动关闭：</p>
+<p><code>echo -n &quot;0&quot; &gt; /proc/sys/kernel/randomize_va_space</code>      -n表示不输出换行</p>
+<p>Windows10强制开启ALSR，可以通过更改PE文件头里的Optional Header结构体里的DLL Characteristics字段，将DLL Characteristics字段的第7位设置为0即可关闭栈的ASLR，但是系统动态库的ALSR是强制开启的。</p>
+<h1 id="DEP"><a href="#DEP" class="headerlink" title="DEP"></a>DEP</h1><p>数据执行保护，默认栈的权限是可读、可写、不可执行。</p>
+<p>gcc编译时通过参数<code>-z execstack</code>关闭该保护，<code>-z noexecstack</code>开启该保护。（-z 传参链接器）</p>
+<h1 id="PIE"><a href="#PIE" class="headerlink" title="PIE"></a>PIE</h1><p>PIE(position-independent executable, 地址无关可执行文件)技术就是一个针对代码段.text, 数据段.*data，.bss等固定地址的一个防护技术。同ASLR一样，应用了PIE的程序会在每次加载时都变换加载基址。</p>
+<p>gcc编译时参数<code>-fpie -pie</code>开启PIE，-<code>no-pie</code>关闭PIE。</p>
+<h1 id="Stack-Guard"><a href="#Stack-Guard" class="headerlink" title="Stack Guard"></a>Stack Guard</h1><p>编译器对栈溢出的一种保护机制，在函数执行时，先在栈上放置一个随机标识符，函数返回前会先检查标识符是否被修改，如果被修改则直接触发中断来中止程序，可以有效的防止栈溢出攻击。</p>
+<p>gcc编译时传参<code>-fno-stack-protector</code> 就可以关闭 Stack Guard（CANARY）</p>
+<h1 id="RELRO"><a href="#RELRO" class="headerlink" title="RELRO"></a>RELRO</h1><p>relro 是一种用于加强对 binary 数据段的保护的技术。relro 分为 partial relro 和 full relro。参数 -z norelro 是关闭RELRO保护。</p>
+<p><strong>Partial RELRO</strong><br>现在gcc 默认编译就是 partial relro，参数是<code>-z relro</code><br>部分区块（比如：<code>.init_array .fini_array .jcr .dynamic .got</code>)在被动态装载（初始化）后，就被标记为只读区块。<br><strong>Full RELRO</strong><br>gcc编译参数是<code>-z relro -z now</code><br>拥有 Partial RELRO 的所有特性,所有导入的符号都在 startup time 被解析</p>
+<h1 id="废话"><a href="#废话" class="headerlink" title="废话"></a>废话</h1><p>还有一些保护，因为太菜，还没遇到过，想了解，可直接传送至开头博客。</p>
 
       
     </div>
@@ -627,7 +641,7 @@
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
     
-    <a href="https://www.j1nxu3.com/2020/03/16/常用命令记录/" title="常用命令记录">https://www.j1nxu3.com/2020/03/16/常用命令记录/</a>
+    <a href="https://www.j1nxu3.com/2020/04/11/二进制程序的保护措施/" title="二进制程序的保护措施">https://www.j1nxu3.com/2020/04/11/二进制程序的保护措施/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！</li>
@@ -647,6 +661,12 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/Pwn/" rel="tag"><i class="fa fa-tag"></i> Pwn</a>
+          
+        </div>
+      
 
       
       
@@ -656,8 +676,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2020/03/15/Android漏洞挖掘/" rel="next" title="Android漏洞挖掘">
-                <i class="fa fa-chevron-left"></i> Android漏洞挖掘
+              <a href="/2020/03/20/Android系统攻击与防范/" rel="next" title="Android系统攻击与防范">
+                <i class="fa fa-chevron-left"></i> Android系统攻击与防范
               </a>
             
           </div>
@@ -665,10 +685,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2020/03/18/Android软件的反破解技术/" rel="prev" title="Android软件的反破解技术">
-                Android软件的反破解技术 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -854,7 +870,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Linux命令记录"><span class="nav-number">1.</span> <span class="nav-text">Linux命令记录</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#ABD命令"><span class="nav-number">2.</span> <span class="nav-text">ABD命令</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#docker命令"><span class="nav-number">3.</span> <span class="nav-text">docker命令</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#ASLR"><span class="nav-number">1.</span> <span class="nav-text">ASLR</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#DEP"><span class="nav-number">2.</span> <span class="nav-text">DEP</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#PIE"><span class="nav-number">3.</span> <span class="nav-text">PIE</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Stack-Guard"><span class="nav-number">4.</span> <span class="nav-text">Stack Guard</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#RELRO"><span class="nav-number">5.</span> <span class="nav-text">RELRO</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#废话"><span class="nav-number">6.</span> <span class="nav-text">废话</span></a></li></ol></div>
             
 
           </div>
