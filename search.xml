@@ -25,10 +25,10 @@
     <url>/2021/05/31/C%E5%9F%BA%E7%A1%80%E8%A1%A5%E5%85%85/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>从零开始，注重基础，心无旁骛。</p>
 <h1 id="基本类型"><a href="#基本类型" class="headerlink" title="基本类型"></a>基本类型</h1><p><img src="/2021/05/31/C基础补充/image-20200729180415547.png" alt="image-20200729180415547"></p>
-<h3 id="溢出"><a href="#溢出" class="headerlink" title="溢出"></a>溢出</h3><p>使用C语言的宏可以得到各类型的最大值，要包含limits.h库文件。</p>
+<h2 id="溢出"><a href="#溢出" class="headerlink" title="溢出"></a>溢出</h2><p>使用C语言的宏可以得到各类型的最大值，要包含limits.h库文件。</p>
 <p>浮点数的最大值要包含float.h。</p>
 <p>math.h库有数学公式。</p>
-<h3 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h3><p>scanf遇到空白停止读取。</p>
+<h2 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h2><p>scanf遇到空白停止读取。</p>
 <p>sizeof计算存储单元，包括<code>\0</code>，strlen计算实际长度。</p>
 <p>对于类型需要sizeof(char),对于特定量sizeof name即可，建议都加圆括号，不会出错。</p>
 <p>const限定符修饰的是变量，不是常量，只是变量只读，不可更改。</p>
@@ -377,10 +377,10 @@
 <p>将两个点击时间的ID互换。</p>
 <p><img src="/2021/05/31/ISCC2021娱乐/image-20210511204424387.png" alt="image-20210511204424387.png"></p>
 <p>ISCC{1SCC_2o2l_KeFuu}</p>
-<h3 id="这是啥"><a href="#这是啥" class="headerlink" title="这是啥"></a>这是啥</h3><p><img src="/2021/05/31/ISCC2021娱乐/image-20210511205142636.png" alt="image-20210511205142636.png"></p>
+<h2 id="这是啥"><a href="#这是啥" class="headerlink" title="这是啥"></a>这是啥</h2><p><img src="/2021/05/31/ISCC2021娱乐/image-20210511205142636.png" alt="image-20210511205142636.png"></p>
 <p>复制JS代码，控制台运行。</p>
 <p>ISCC{what_is*_jsJS&amp;}</p>
-<h3 id="Web01"><a href="#Web01" class="headerlink" title="Web01"></a>Web01</h3><p><img src="/2021/05/31/ISCC2021娱乐/image-20210511210025764.png" alt="image-20210511210025764.png"></p>
+<h2 id="Web01"><a href="#Web01" class="headerlink" title="Web01"></a>Web01</h2><p><img src="/2021/05/31/ISCC2021娱乐/image-20210511210025764.png" alt="image-20210511210025764.png"></p>
 <p>科学计数法，%00截断。</p>
 <h2 id="ISCC客服一号冲冲冲（二）"><a href="#ISCC客服一号冲冲冲（二）" class="headerlink" title="ISCC客服一号冲冲冲（二）"></a>ISCC客服一号冲冲冲（二）</h2><h1 id="Mobile"><a href="#Mobile" class="headerlink" title="Mobile"></a>Mobile</h1><h2 id="Mobile-Easy"><a href="#Mobile-Easy" class="headerlink" title="Mobile Easy"></a>Mobile Easy</h2><p><img src="/2021/05/31/ISCC2021娱乐/image-20210512175514207.png" alt="image-20210512175514207.png"></p>
 <p>得到secondStr：+0dNlE8us8</p>
@@ -411,7 +411,7 @@
 <h2 id="海市蜃楼-1"><a href="#海市蜃楼-1" class="headerlink" title="海市蜃楼-1"></a>海市蜃楼-1</h2><p>解压文档，在document.xml中发现flag。</p>
 <p><img src="/2021/05/31/ISCC2021娱乐/image-20210517143223338.png" alt="image-20210517143223338"></p>
 <p>ISCC{zheshishui}</p>
-<h1 id="美人计"><a href="#美人计" class="headerlink" title="美人计"></a>美人计</h1><p>解码。</p>
+<h2 id="美人计"><a href="#美人计" class="headerlink" title="美人计"></a>美人计</h2><p>解码。</p>
 <p><img src="/2021/05/31/ISCC2021娱乐/image-20210517143549342.png" alt="image-20210517143549342"></p>
 <p><img src="/2021/05/31/ISCC2021娱乐/image-20210517155330298.png" alt="image-20210517155330298"></p>
 <h1 id="Reverse"><a href="#Reverse" class="headerlink" title="Reverse"></a>Reverse</h1><h2 id="Garden"><a href="#Garden" class="headerlink" title="Garden"></a>Garden</h2><p>pyc在线反编译写脚本解密。</p>
