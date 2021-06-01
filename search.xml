@@ -3,7 +3,18 @@
   <entry>
     <title>Frida_hook大全</title>
     <url>/2021/06/01/Frida-hook%E5%A4%A7%E5%85%A8/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="框架层hook及Frida和Java语言的互转"><a href="#框架层hook及Frida和Java语言的互转" class="headerlink" title="框架层hook及Frida和Java语言的互转"></a>框架层hook及Frida和Java语言的互转</h1><h1 id="组件和事件hook核心原理和案例"><a href="#组件和事件hook核心原理和案例" class="headerlink" title="组件和事件hook核心原理和案例"></a>组件和事件hook核心原理和案例</h1>]]></content>
+    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="1426ebb1e60f9d985063e7cdddea3b23a72edae884eba2b52ccd38082bb61c35">5f381da81afca645bb2dff47095c1ef49888d798e2c90b7e10444602797583d638a09724986b5997e4925628c10c84c22a577e77c83c011e29d0e683d52a26eadda6fdba47e3cc7b29e19b772ceee07d3e7e3206f484258cd02eb7ce3c2cbf92d44535c61577925f1366d1d4f009eb82c8adbc5cff6c3fd606881e438f219da20d398dd13fd8531a8b6d78a55fa7141a453027d7cad8d5d3106bcbe595684d57ea647e3be851f8479b55ca6ca52534cc566cb801e1ea838b5690cab5d9603a702e7ea6b145663399b36997e15fde7f584ae0f0a17b2e6b654679cf846fd03a6defc63dfbecd6592e79c26189164150565445ec90dafc4195301b460a582c8a61e99c541c910ad9269d26b2df9da3344335b0142ce8d302c7a4cce6aad3d4ba5913d9656048a4c3d64e5cbd4c343ece555e01231858b84b053743c12ac0986f92677a8c14e6ea6d7a7f1aefe9275d94a5a951c831460674af7b44bfbcc2b5e90c3f2f2c8403d9f8800197d856ad19ad15634aa037be63a2fc5a9e906e5f2bae3b13afdec23f9573613b98c5a973234862c87b260e992f1949775e9cb2e18a284c1417c29bcc170ebfc6ed255670225c451e5a501e2abab4cddba2f3de2a68b8e689674603c4123ffdedbbcae708de468ad99fbee6c921d4874ab8b89ce331213906413f3e9668054e704d3e77b963536a9aec9754df91761733762240a344bb6cf435bb5d31272b53550874ab2f474a7c54e8071063c938b8e6d0b8ce7684cbf80c1357bbd36e31e67430e28404c4b2666202eb0a572319e3a467cd5047598361cb94d9c372fd67952f8545d163e6c87424fae97a3215a2526874916f4a6f41698ab51da7e9071b1d7257804f0cdefd77c483c5a8eee976e7e44f25c6de60d03ee2e1ee944e714c3e7bf42ea4a4d47a2e27bbe9d0c6441f57316351f23d82c7b3b44087c7775edb4bae0025ec28bd8463</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">Hey, password is required here.</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
       <categories>
         <category>Android</category>
         <category>Android应用安全</category>
